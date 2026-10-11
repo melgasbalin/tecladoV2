@@ -1,0 +1,15 @@
+# IMPORTANTE: el hardware es nice!nano v2 (clon).
+# El board DEBE ser nice_nano_v2 en las tres entradas.
+# nice_nano (v1) lee la bateria por un divisor de voltaje en AIN2/P0.04 que
+# NO existe en la v2 -> la bateria se reporta en 0% en ambas mitades.
+# nice_nano_v2 usa zmk,battery-nrf-vddh (medicion interna VDDH), que es lo
+# correcto para esta placa.
+include:
+  - board: nice_nano_v2
+    shield: corne_left
+
+  - board: nice_nano_v2
+    shield: corne_right
+
+  - board: nice_nano_v2
+    shield: settings_reset
