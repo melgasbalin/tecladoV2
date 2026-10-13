@@ -38,25 +38,13 @@
         };
 
         // COMBO: ESC + P = Command Palette (Shift + CMD/GUI + P)
-        combo_vscode_palette {
-            timeout-ms = <50>;
-            key-positions = <0 10>; 
-            bindings = <&kp LS(LG(P))>;
-        };
+        
 
         // COMBO: ESC + R = Screenshot Recorte (Shift + CMD/GUI + 4)
-        combo_mac_screenshot_4 {
-            timeout-ms = <50>;
-            key-positions = <0 4>; 
-            bindings = <&kp LS(LG(N4))>;
-        };
+        
 
         // COMBO: ESC + T = Screenshot Herramienta/Video (Shift + CMD/GUI + 5)
-        combo_mac_screenshot_5 {
-            timeout-ms = <50>;
-            key-positions = <0 5>; 
-            bindings = <&kp LS(LG(N5))>;
-        };
+        
     };
 
     keymap {
@@ -70,11 +58,11 @@
 // | CTRL |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | SHFT |
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
             bindings = <
-   &kp ESC       &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
-   &td_shft_caps &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-   &kp LCTRL     &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
-                 &kp LGUI &lt 1 TAB &kp SPACE    &kp RET &lt 2 DEL &kp RALT
-            >;
+            &kp ESC  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp BSPC
+            &td_shft_caps  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp SEMI  &kp SQT
+            &kp LCTRL  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp LALT
+            &kp LGUI  &lt 1 TAB  &kp SPACE  &kp RET  &lt 2 DEL  &kp RALT
+        >;
         };
 
         lower_layer {
